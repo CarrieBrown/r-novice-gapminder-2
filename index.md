@@ -14,5 +14,5 @@ and knowledge of the R language.
 > Understand that computers store data and instructions (programs, scripts etc.) in files.
 > Files are organised in directories (folders).
 > Know how to access files not in the working directory by specifying the path.
-{: .prereq}
 > Basic introduction to R, as seen in the [core lesson](http://carriebrown.github.io/r-novice-gapminder)
+{: .prereq}
