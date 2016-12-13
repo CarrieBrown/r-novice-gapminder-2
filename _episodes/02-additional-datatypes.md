@@ -16,6 +16,8 @@ keypoints:
 - "A list is a container that can contain objects of different data types."
 ---
 
+
+
 ## Messy Data
 
 Not all real world data is as clean as the data we have used in these lessons. Sometimes they 
