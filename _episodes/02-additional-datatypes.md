@@ -10,21 +10,20 @@ objectives:
 - "Explore additional data types in R including Lists and Matrices"
 - "Learn about missing data and other special values"
 keypoints:
-- "Missing data gets assigned as `NA`"
-- "`Inf` is used to represent infinite values and `NaN` indicates undefined values."
+- "R uses special values to indicate missing or incorrect data"
 - "A matrix is a three dimensional vector"
 - "A list is a container that can contain objects of different data types."
 ---
 
 
 
-## Messy Data
+ Messy Data
 
 Not all real world data is as clean as the data we have used in these lessons. Sometimes they 
 contain missing information, incorrect values or are just generally messy. How can we identify 
 and handle these situations>
 
-### Missing Data
+# Missing Data
 
 R supports missing data in vectors. They are represented as `NA` (Not Available)
 and can be used for all the vector types covered in this lesson:
@@ -51,7 +50,7 @@ is.na(x)
 {: .r}
 
 ~~~
-## [1] FALSE  TRUE FALSE FALSE  TRUE
+ [1] FALSE  TRUE FALSE FALSE  TRUE
 ~~~
 {: .output}
 
@@ -61,7 +60,7 @@ is.na(y)
 {: .r}
 
 ~~~
-## [1] FALSE FALSE FALSE FALSE FALSE
+ [1] FALSE FALSE FALSE FALSE FALSE
 ~~~
 {: .output}
 
@@ -71,7 +70,7 @@ anyNA(x)
 {: .r}
 
 ~~~
-## [1] TRUE
+ [1] TRUE
 ~~~
 {: .output}
 
@@ -81,11 +80,11 @@ anyNA(y)
 {: .r}
 
 ~~~
-## [1] FALSE
+ [1] FALSE
 ~~~
 {: .output}
 
-### Other Special Values
+# Other Special Values
 
 `Inf` is infinity. You can have either positive or negative infinity.
 
@@ -96,7 +95,7 @@ anyNA(y)
 {: .r}
 
 ~~~
-## [1] Inf
+ [1] Inf
 ~~~
 {: .output}
 
@@ -109,11 +108,11 @@ anyNA(y)
 {: .r}
 
 ~~~
-## [1] NaN
+ [1] NaN
 ~~~
 {: .output}
 
-### Matrix
+# Matrix
 
 In R matrices are an extension of the numeric or character vectors. They are not
 a separate type of object but simply an atomic vector with dimensions; the
@@ -127,9 +126,9 @@ m
 {: .r}
 
 ~~~
-##      [,1] [,2]
-## [1,]   NA   NA
-## [2,]   NA   NA
+      [,1] [,2]
+ [1,]   NA   NA
+ [2,]   NA   NA
 ~~~
 {: .output}
 
@@ -139,7 +138,7 @@ dim(m)
 {: .r}
 
 ~~~
-## [1] 2 2
+ [1] 2 2
 ~~~
 {: .output}
 
@@ -173,10 +172,10 @@ cbind(x, y)
 {: .r}
 
 ~~~
-##      x  y
-## [1,] 1 10
-## [2,] 2 11
-## [3,] 3 12
+      x  y
+ [1,] 1 10
+ [2,] 2 11
+ [3,] 3 12
 ~~~
 {: .output}
 
@@ -186,9 +185,9 @@ rbind(x, y)
 {: .r}
 
 ~~~
-##   [,1] [,2] [,3]
-## x    1    2    3
-## y   10   11   12
+   [,1] [,2] [,3]
+ x    1    2    3
+ y   10   11   12
 ~~~
 {: .output}
 
@@ -202,13 +201,13 @@ mdat
 {: .r}
 
 ~~~
-##      [,1] [,2] [,3]
-## [1,]    1    2    3
-## [2,]   11   12   13
+      [,1] [,2] [,3]
+ [1,]    1    2    3
+ [2,]   11   12   13
 ~~~
 {: .output}
 
-### List
+# List
 
 In R lists act as containers. Unlike atomic vectors, the contents of a list are
 not restricted to a single mode and can encompass any mixture of data
@@ -229,28 +228,28 @@ x
 {: .r}
 
 ~~~
-## [[1]]
-## [1] 1
-## 
-## [[2]]
-## [1] "a"
-## 
-## [[3]]
-## [1] TRUE
-## 
-## [[4]]
-## [1] 1+4i
+ [[1]]
+ [1] 1
+ 
+ [[2]]
+ [1] "a"
+ 
+ [[3]]
+ [1] TRUE
+ 
+ [[4]]
+ [1] 1+4i
 ~~~
 {: .output}
 
 ~~~
-x <- vector("list", length = 5) ## empty list
+x <- vector("list", length = 5)  empty list
 length(x)
 ~~~
 {: .r}
 
 ~~~
-## [1] 5
+ [1] 5
 ~~~
 {: .output}
 
@@ -260,7 +259,7 @@ x[[1]]
 {: .r}
 
 ~~~
-## NULL
+ NULL
 ~~~
 {: .output}
 
@@ -272,7 +271,7 @@ length(x)
 {: .r}
 
 ~~~
-## [1] 10
+ [1] 10
 ~~~
 {: .output}
 
@@ -287,20 +286,20 @@ xlist
 {: .r}
 
 ~~~
-## $a
-## [1] "Karthik Ram"
-## 
-## $b
-##  [1]  1  2  3  4  5  6  7  8  9 10
-## 
-## $data
-##   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
-## 1          5.1         3.5          1.4         0.2  setosa
-## 2          4.9         3.0          1.4         0.2  setosa
-## 3          4.7         3.2          1.3         0.2  setosa
-## 4          4.6         3.1          1.5         0.2  setosa
-## 5          5.0         3.6          1.4         0.2  setosa
-## 6          5.4         3.9          1.7         0.4  setosa
+ $a
+ [1] "Karthik Ram"
+ 
+ $b
+  [1]  1  2  3  4  5  6  7  8  9 10
+ 
+ $data
+   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+ 1          5.1         3.5          1.4         0.2  setosa
+ 2          4.9         3.0          1.4         0.2  setosa
+ 3          4.7         3.2          1.3         0.2  setosa
+ 4          4.6         3.1          1.5         0.2  setosa
+ 5          5.0         3.6          1.4         0.2  setosa
+ 6          5.4         3.9          1.7         0.4  setosa
 ~~~
 {: .output}
 
