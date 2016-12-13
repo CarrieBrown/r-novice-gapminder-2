@@ -7,7 +7,7 @@ questions:
 - "How do I detect and manage missing and incorrect data?"
 - "How can I create a class that contains multiple data types?"
 objectives:
-- "Explore additional data types in R including Lists and Matrices'
+- "Explore additional data types in R including Lists and Matrices"
 - "Learn about missing data and other special values"
 keypoints:
 - "Missing data gets assigned as `NA`"
