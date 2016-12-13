@@ -1,5 +1,5 @@
 ---
-title: "Project Management With RStudio"
+title: Project Management With RStudio
 teaching: 20
 exercises: 10
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "Lists and Matrices"
+title: Lists and Matrices
 teaching: 20
 exercises: 10
 questions:
@@ -15,6 +15,12 @@ keypoints:
 - "A matrix is a three dimensional vector"
 - "A list is a container that can contain objects of different data types."
 ---
+
+## Messy Data
+
+Not all real world data is as clean as the data we have used in these lessons. Sometimes they 
+contain missing information, incorrect values or are just generally messy. How can we identify 
+and handle these situations>
 
 ### Missing Data
 
