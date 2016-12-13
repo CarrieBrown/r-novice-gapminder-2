@@ -6,7 +6,7 @@ questions:
 - "How do I use and maneuver within other data classes available in R?"
 - "How do I detect and manage missing and incorrect data?"
 - "How can I create a class that contains multiple data types?"
-Objectives:
+objectives:
 - "Explore additional data types in R including Lists and Matrices'
 - "Learn about missing data and other special values"
 keypoints:
