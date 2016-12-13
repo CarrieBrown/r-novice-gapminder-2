@@ -3,6 +3,23 @@ title: Lists and Matrices
 teaching: 20
 exercises: 10
 questions:
+- "How can I manage my projects in R?"
+objectives:
+- To be able to create self-contained projects in RStudio
+- To be able to use git from within RStudio
+keypoints:
+- "Use RStudio to create and manage projects with consistent layout."
+- "Treat raw data as read-only."
+- "Treat generated output as disposable."
+- "Separate function definition and application."
+- "Use version control."
+---
+
+---
+title: Lists and Matrices
+teaching: 20
+exercises: 10
+questions:
 - "How do I use and maneuver within other data classes available in R?"
 - "How do I detect and manage missing and incorrect data?"
 - "How can I create a class that contains multiple data types?"
